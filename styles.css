@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Warna latar belakang hitam */
+    color: #f8f9fa; /* Warna teks putih */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Warna biru untuk tombol */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: #0056b3; /* Warna saat hover */
+    transform: scale(1.05); /* Efek perbesaran saat hover */
+}
+
+.page {
+    display: none; /* Sembunyikan semua halaman pada awalnya */
+}
+
+.page.active {
+    display: block; /* Hanya tampilkan halaman aktif */
+}
+
+form {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #444; /* Border untuk form */
+    border-radius: 5px;
+    background-color: #222; /* Warna latar belakang form */
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px); /* Lebar input */
+    border: 1px solid #555; /* Border input */
+    border-radius: 5px;
+    background-color: #333; /* Warna latar belakang input */
+    color: #fff; /* Warna teks input */
+}
+
+input::placeholder {
+    color: #bbb; /* Warna placeholder */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745; /* Warna hijau untuk tombol simpan/hapus */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838; /* Warna saat hover untuk tombol simpan/hapus */
+    transform: scale(1.05); /* Efek perbesaran saat hover */
+}
+
+#entries-list {
+    margin-top: 20px;
+}
+
+.entry {
+    border: 1px solid #444; /* Border untuk entri catatan */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #222; /* Warna latar belakang entri */
+}
+
+.entry strong {
+    color: #f8f9fa; /* Warna nama pemilik catatan */
+}
+
+.entry em {
+    color: #aaa; /* Warna untuk tanggal */
+}

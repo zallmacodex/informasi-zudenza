@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMASI ZALLMACODE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>INFORMASI</h1>
+        <nav>
+            <button onclick="showPage('add-page')">Tambah Informasi</button>
+            <button onclick="showPage('delete-page')">Hapus Informasi</button>
+            <button onclick="showPage('view-page')">Lihat Informasi</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="add-page" class="page">
+            <h2>Tambah Informasi</h2>
+            <form id="diary-form">
+                <input type="text" id="diary-entry" placeholder="Tuliskan informasi Anda" required>
+                <input type="text" id="user-name" placeholder="Nama Anda" required>
+                <input type="password" id="entry-password" placeholder="Kata Sandi" required>
+                <button type="submit">Simpan informasi</button>
+            </form>
+        </div>
+
+        <div id="delete-page" class="page" style="display:none;">
+            <h2>Hapus Informasi</h2>
+            <input type="text" id="entry-index" placeholder="Nomor Informasi yang Ingin Dihapus" required>
+            <input type="password" id="delete-password" placeholder="Kata Sandi" required>
+            <button id="delete-button">Hapus Informasi</button>
+        </div>
+
+        <div id="view-page" class="page" style="display:none;">
+            <h2>Lihat Informasi</h2>
+            <div id="entries-list"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
